@@ -67,6 +67,7 @@ dependencies = [
 [[package]]
 name = "just-core"
 version = "0.1.0"
+source = "git+https://github.com/just-cli/just-core#dcd7d8a411ff2f6ab0edbf2373e10bd26630bc24"
 dependencies = [
  "duct 0.11.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -81,7 +82,7 @@ dependencies = [
 name = "just-uninstall"
 version = "0.1.0"
 dependencies = [
- "just-core 0.1.0",
+ "just-core 0.1.0 (git+https://github.com/just-cli/just-core)",
  "log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "semver 0.9.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "structopt 0.2.14 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -333,6 +334,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum clap 2.32.0 (registry+https://github.com/rust-lang/crates.io-index)" = "b957d88f4b6a63b9d70d5f454ac8011819c6efa7727858f458ab71c756ce2d3e"
 "checksum duct 0.11.1 (registry+https://github.com/rust-lang/crates.io-index)" = "f87f5af80601599209bff21146e4113e8c54471151049deebc37e75b78e42729"
 "checksum heck 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)" = "20564e78d53d2bb135c343b3f47714a56af2061f1c928fdb541dc7b9fdd94205"
+"checksum just-core 0.1.0 (git+https://github.com/just-cli/just-core)" = "<none>"
 "checksum lazycell 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "b294d6fa9ee409a054354afc4352b0b9ef7ca222c69b8812cbea9e7d2bf3783f"
 "checksum libc 0.2.46 (registry+https://github.com/rust-lang/crates.io-index)" = "023a4cd09b2ff695f9734c1934145a315594b7986398496841c7031a5a1bbdbd"
 "checksum log 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)" = "c84ec4b527950aa83a329754b01dbe3f58361d1c5efacd1f6d68c494d08a17c6"
