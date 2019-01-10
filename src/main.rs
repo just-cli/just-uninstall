@@ -23,7 +23,7 @@ fn uninstall(pkg_name: &str) -> BoxedResult<()> {
                 kernel.remove_shims(&manifest.package)?;
 
                 println!(
-                    "Package {} {} was successfully uninstalled",
+                    "Package {}-{} was successfully uninstalled",
                     pkg_name, version
                 );
             }
