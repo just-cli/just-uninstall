@@ -1,0 +1,10 @@
+[package]
+name = "just-uninstall"
+version = "0.1.0"
+authors = ["Randy Schütt <rswhite4@googlemail.com>"]
+edition = "2018"
+
+[dependencies]
+just-core = { path = "../just-core" }
+structopt = "0.2.14"
+semver= "0.9"
