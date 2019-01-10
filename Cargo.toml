@@ -8,3 +8,4 @@ edition = "2018"
 just-core = { path = "../just-core" }
 structopt = "0.2.14"
 semver= "0.9"
+log = "0.4.6"
