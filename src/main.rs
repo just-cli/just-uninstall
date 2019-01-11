@@ -5,10 +5,9 @@ use semver::Version;
 use structopt::StructOpt;
 
 #[derive(StructOpt, Debug)]
-#[structopt(name = "install")]
-struct Opt {
-    #[structopt(long = "package")]
-    pub package: Option<String>,
+#[structopt(name = "uninstall")]
+struct JustUninstall {
+    pub package: String,
 }
 
 fn uninstall(pkg_name: &str) -> BoxedResult<()> {
@@ -47,8 +46,7 @@ fn remove_package(pkg_name: &str, packages: &mut InstalledPackages) -> Option<Ve
 }
 
 fn main() {
-    let opt: Opt = Opt::from_args();
-    if let Some(pkg_name) = opt.package {
-        uninstall(&pkg_name).ok();
-    }
+    let opt: JustUninstall = JustUninstall::from_args();
+    uninstall(&opt.package)
+        .unwrap_or_else(|e| panic!("Could not uninstall package {}: {:?}", opt.package, e));
 }
