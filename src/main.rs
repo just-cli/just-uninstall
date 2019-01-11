@@ -30,11 +30,6 @@ fn uninstall(pkg_name: &str) -> BoxedResult<()> {
             None => error!("No Package with name {} found", pkg_name),
         }
 
-        println!(
-            "Package {}-{} was successfully uninstalled",
-            pkg_name, version
-        );
-
         Ok(())
     } else {
         println!("Package {} is not installed", pkg_name);
